@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane hgap="8.0" vgap="8.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.com.tistesoft.colorchoose.ChooseController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Red" GridPane.halignment="CENTER" />
+      <Label text="Green" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+      <Label text="Blue" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <Label text="Alpha" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Slider fx:id="redSlider" max="255.0" GridPane.columnIndex="1" />
+      <Slider fx:id="greenSlider" max="255.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Slider fx:id="blueSlider" max="255.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Slider fx:id="alphaSlider" max="1.0" value="1.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="redTextField" prefWidth="50.0" GridPane.columnIndex="2" />
+      <TextField fx:id="greenTextField" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <TextField fx:id="blueTextField" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <TextField fx:id="alphaTextField" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Rectangle fx:id="colorRectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.rowSpan="2147483647" />
+   </children>
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+</GridPane>
